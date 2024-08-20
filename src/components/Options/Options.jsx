@@ -1,6 +1,8 @@
+import style from "./Options.module.css";
+
 export default function Options({ onFeedback, onReset, totalFeedback }) {
   return (
-    <div>
+    <div className={style.options}>
       <button onClick={() => onFeedback("good")}>Good</button>
       <button onClick={() => onFeedback("neutral")}>Neutral</button>
       <button onClick={() => onFeedback("bad")}>Bad</button>

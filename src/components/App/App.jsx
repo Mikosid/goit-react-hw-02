@@ -5,8 +5,6 @@ import Notification from "../Notification/Notification";
 
 import { useState, useEffect } from "react";
 
-import "./App.module.css";
-
 export default function App() {
   const [clicks, setClicks] = useState(() => {
     const savedFeedback = localStorage.getItem("feedback");
